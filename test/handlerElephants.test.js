@@ -40,4 +40,11 @@ describe('Testes da função HandlerElephants', () => {
 
     expect(actual).toEqual(expected);
   });
+
+  it('caso a função receba o argumento averageAge como parametro espera-se receber como resultado 10,5', () => {
+    const actual = handlerElephants('averageAge');
+    const expected = 10.5;
+
+    expect(actual).toBe(expected);
+  });
 });
