@@ -12,7 +12,7 @@ describe('Testes da função HandlerElephants', () => {
     const actual1 = handlerElephants(4);
     const actual2 = handlerElephants([]);
     const expected = 'Parâmetro inválido, é necessário uma string';
-    
+
     expect(actual1).toBe(expected);
     expect(actual2).toBe(expected);
   });
@@ -39,5 +39,5 @@ describe('Testes da função HandlerElephants', () => {
     const expected = ['Ilana', 'Orval', 'Bea', 'Jefferson'];
 
     expect(actual).toEqual(expected);
-  });  
+});  
 });
