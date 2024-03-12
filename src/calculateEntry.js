@@ -31,13 +31,4 @@ const calculateEntry = (entrants) => {
   return result;
 };
 
-console.log(calculateEntry([
-  { name: 'faker.person.fullName()', age: 5 },
-  { name: 'faker.person.fullName()', age: 5 },
-  { name: 'faker.person.fullName()', age: 5 },
-  { name: 'faker.person.fullName()', age: 18 },
-  { name: 'faker.person.fullName()', age: 18 },
-  { name: 'faker.person.fullName()', age: 50 },
-]));
-
 module.exports = { calculateEntry, countEntrants };
