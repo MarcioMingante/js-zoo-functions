@@ -39,5 +39,5 @@ describe('Testes da função HandlerElephants', () => {
     const expected = ['Ilana', 'Orval', 'Bea', 'Jefferson'];
 
     expect(actual).toEqual(expected);
-});  
+  });
 });
