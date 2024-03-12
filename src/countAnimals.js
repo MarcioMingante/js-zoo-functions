@@ -5,9 +5,9 @@ const countAnimals = (animal) => {
     const animalsList = data.species
       .reduce((acc, specie) => {
         acc[specie.name] = specie.residents.length;
-    
+
         return acc;
-    }, {});
+      }, {});
 
     return animalsList;
   }
