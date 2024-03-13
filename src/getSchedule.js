@@ -12,10 +12,10 @@ const schedule = () => {
       .filter((specie) => specie.availability.includes(currentDay))
       .map((specie) => specie.name);
 
-      newObject[currentDay] = {
-        officeHour: `Open from ${currentinfo.open}am until ${currentinfo.close}pm`,
-        exhibition: availableAnimals,
-      };
+    newObject[currentDay] = {
+      officeHour: `Open from ${currentinfo.open}am until ${currentinfo.close}pm`,
+      exhibition: availableAnimals,
+    };
 
     if (currentDay === 'Monday') {
       newObject[currentDay] = {
@@ -26,12 +26,6 @@ const schedule = () => {
 
   return newObject;
 };
-
-// const currentDay = days[0];
-// const currentinfo = days[1];
-// const availableAnimals = data.species
-//       .filter((specie) => specie.availability.includes(currentDay))
-//       .map((specie) => specie.name);
 
 const getSchedule = (scheduleTarget) => {
   const animals = data.species
@@ -55,7 +49,5 @@ const getSchedule = (scheduleTarget) => {
     return schedule();
   }
 };
-
-console.log(getSchedule());
 
 module.exports = getSchedule;
